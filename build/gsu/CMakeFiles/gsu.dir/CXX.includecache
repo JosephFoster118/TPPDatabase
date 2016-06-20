@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../gsu/include/dictionary.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+
+../gsu/include/iniparser.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+dictionary.h
+../gsu/include/dictionary.h
+
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/dictionary.cpp
+dictionary.h
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/dictionary.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/iniparser.cpp
+ctype.h
+-
+iniparser.h
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/iniparser.h
+

@@ -1,0 +1,4 @@
+/home/BBB/software/TwitchPlaysPokemonMonitor/build/DBPopulate/CMakeFiles/DBPopulate.dir
+/home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor/CMakeFiles/TPPMonitor.dir
+/home/BBB/software/TwitchPlaysPokemonMonitor/build/gsi/CMakeFiles/gsi.dir
+/home/BBB/software/TwitchPlaysPokemonMonitor/build/gsu/CMakeFiles/gsu.dir
