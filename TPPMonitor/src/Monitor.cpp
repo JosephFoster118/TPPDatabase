@@ -40,7 +40,7 @@ void Monitor::callbackMessage(const char* channel, IRCMessage* message)
 	if(strcmp(sender,"tpp") == 0)
 	{	
 		
-		printf("%20s: %s\n",channel,trailing);
+		//printf("%20s: %s\n",channel,trailing);
 		if(strstr(trailing,"fainted!") != NULL)
 		{
 			if(strstr(trailing,"Blue") != NULL)
@@ -265,7 +265,7 @@ void Monitor::extractPokemon(const char* l)
 	memset(n,0,128);
 	it = 0;
 	
-	printf("%175d\n",counter);
+	printf("%125d\n",counter);
 	counter++;
 	
 	//printf("%c,%c\n",list[count],list[count + 1]);
