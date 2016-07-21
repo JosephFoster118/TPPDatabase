@@ -23,7 +23,7 @@ CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -169,9 +169,6 @@ DBPopulate_SOURCE_DIR:STATIC=/home/BBB/software/TwitchPlaysPokemonMonitor/DBPopu
 EXECUTABLE_OUTPUT_PATH:PATH=
 
 //Path to a library.
-GRI:FILEPATH=GRI-NOTFOUND
-
-//Path to a library.
 GSI:FILEPATH=GSI-NOTFOUND
 
 //Path to a library.
@@ -191,12 +188,6 @@ TPPMonitor_BINARY_DIR:STATIC=/home/BBB/software/TwitchPlaysPokemonMonitor/build/
 
 //Value Computed by CMake
 TPPMonitor_SOURCE_DIR:STATIC=/home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor
-
-//Value Computed by CMake
-TestRobot_BINARY_DIR:STATIC=/home/BBB/software/TwitchPlaysPokemonMonitor/build/DBPopulate
-
-//Value Computed by CMake
-TestRobot_SOURCE_DIR:STATIC=/home/BBB/software/TwitchPlaysPokemonMonitor/DBPopulate
 
 //Value Computed by CMake
 gsi_BINARY_DIR:STATIC=/home/BBB/software/TwitchPlaysPokemonMonitor/build/gsi

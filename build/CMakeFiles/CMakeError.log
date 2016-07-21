@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec952491489/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec952491489.dir/build.make CMakeFiles/cmTryCompileExec952491489.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2413887997/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2413887997.dir/build.make CMakeFiles/cmTryCompileExec2413887997.dir/build
 make[1]: Entering directory `/home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec952491489.dir/CheckSymbolExists.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec952491489.dir/CheckSymbolExists.c.o   -c /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec952491489
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec952491489.dir/link.txt --verbose=1
-/usr/bin/gcc         CMakeFiles/cmTryCompileExec952491489.dir/CheckSymbolExists.c.o  -o cmTryCompileExec952491489 -rdynamic 
-CMakeFiles/cmTryCompileExec952491489.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTryCompileExec2413887997.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2413887997.dir/CheckSymbolExists.c.o   -c /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2413887997
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2413887997.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec2413887997.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2413887997 -rdynamic 
+CMakeFiles/cmTryCompileExec2413887997.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x10): undefined reference to `pthread_create'
 CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
 collect2: ld returned 1 exit status
 make[1]: Leaving directory `/home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp'
-make[1]: *** [cmTryCompileExec952491489] Error 1
-make: *** [cmTryCompileExec952491489/fast] Error 2
+make[1]: *** [cmTryCompileExec2413887997] Error 1
+make: *** [cmTryCompileExec2413887997/fast] Error 2
 
 File /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,19 +36,19 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec4162159313/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4162159313.dir/build.make CMakeFiles/cmTryCompileExec4162159313.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1300509664/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1300509664.dir/build.make CMakeFiles/cmTryCompileExec1300509664.dir/build
 make[1]: Entering directory `/home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec4162159313.dir/CheckFunctionExists.c.o
-/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4162159313.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec4162159313
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4162159313.dir/link.txt --verbose=1
-/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4162159313.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4162159313 -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTryCompileExec1300509664.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1300509664.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1300509664
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1300509664.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1300509664.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1300509664 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec4162159313] Error 1
 make[1]: Leaving directory `/home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec4162159313/fast] Error 2
+make[1]: *** [cmTryCompileExec1300509664] Error 1
+make: *** [cmTryCompileExec1300509664/fast] Error 2
 
 

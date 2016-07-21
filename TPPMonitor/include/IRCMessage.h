@@ -8,7 +8,7 @@
 class IRCMessage
 {
 private:
-	const static uint16_t MAX_TRAILING_SIZE = 512;
+	const static uint16_t MAX_TRAILING_SIZE = 2048;
 	const static uint16_t MAX_SENDER_SIZE = 32;
 	const static uint16_t MAX_TYPE_SIZE = 32;
 	char sender[MAX_SENDER_SIZE];

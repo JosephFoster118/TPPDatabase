@@ -16,6 +16,10 @@ string.h
 unistd.h
 -
 
+../gsu/include/gsu/Callback.h
+
+../gsu/include/gsu/Vector2D.h
+
 ../gsu/include/iniparser.h
 stdio.h
 -
@@ -25,6 +29,14 @@ string.h
 -
 dictionary.h
 ../gsu/include/dictionary.h
+
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/Callback.cpp
+gsu/Callback.h
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/gsu/Callback.h
+
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/Vector2D.cpp
+gsu/Vector2D.h
+/home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/gsu/Vector2D.h
 
 /home/BBB/software/TwitchPlaysPokemonMonitor/gsu/src/dictionary.cpp
 dictionary.h

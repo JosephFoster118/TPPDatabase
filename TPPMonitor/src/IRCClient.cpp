@@ -54,7 +54,7 @@ void IRCClient::doPeriodic()
 	message = new IRCMessage(buffer);
 	char sender[32];
 	char type[32];
-	char trailing[512];
+	char trailing[2048];
 	message->getSender(sender);
 	message->getType(type);
 	message->getTrailing(trailing);
@@ -70,7 +70,7 @@ void IRCClient::doPeriodic()
 	{
 		callback->callbackMessage(channel_name, message);
 	}
-	
+	//printf("DELETE MESSAGE\n");
 	if(message != NULL)
 	{
 		delete message;

@@ -1,7 +1,0 @@
-#!/bin/bash
-clear
-echo 1 > /sys/class/leds/beaglebone:green:usr2/brightness
-echo Running...
-cd ../bin
-./TPPMonitor
-echo 0 > /sys/class/leds/beaglebone:green:usr2/brightness

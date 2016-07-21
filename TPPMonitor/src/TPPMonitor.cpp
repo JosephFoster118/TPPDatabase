@@ -18,7 +18,7 @@
 int main()
 {
 	printf("\U0000263a  \U0000263a  \U0000263a ---[TPPMonitor]---\U0000263a  \U0000263a  \U0000263a \n");
-	
+	freopen( "stderr.log", "a", stderr );
 	dictionary* settings_file = NULL;
 	settings_file = iniparser_load("Settings.cfg");
 	if(settings_file == NULL)
@@ -130,7 +130,7 @@ int main()
 	}
 	
 	printf("Username: %s\n",login_user);
-	printf("Password: %s\n",login_password);
+	//printf("Password: %s\n",login_password);
 	printf("Move List Database: %s\n",move_list_database);
 	printf("Move List Table: %s\n",move_list_table);
 	printf("Team Stats Database: %s\n",team_stats_database);
@@ -156,7 +156,7 @@ int main()
 	//wait for 
 	while(true)
 	{
-		gsi::Thread::sleep(0.25);
+		gsi::Thread::sleep(100);
 	}
 	
 	//printf("\U00002639\U00000020\U00000048\U00000061\U0000000A");

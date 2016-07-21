@@ -16,6 +16,10 @@ string.h
 stdlib.h
 -
 
+/home/BBB/software/TwitchPlaysPokemonMonitor/DBPopulate/src/Pokemon.cpp
+Pokemon.h
+/home/BBB/software/TwitchPlaysPokemonMonitor/DBPopulate/src/Pokemon.h
+
 /home/BBB/software/TwitchPlaysPokemonMonitor/DBPopulate/src/main.cpp
 stdio.h
 -

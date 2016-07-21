@@ -8,7 +8,7 @@ IRCMessage::IRCMessage(const char* message)
 	memset(trailing,0,MAX_TRAILING_SIZE);
 	
 	char* full_message;
-	full_message = new char[1024];
+	full_message = new char[2048];
 	strcpy(full_message,message);
 	char* reference_front = strchr(full_message,'!');
 	char* reference_back = NULL;
@@ -54,7 +54,11 @@ IRCMessage::IRCMessage(const char* message)
 				memcpy(buffer_tmp,trailing,MAX_TRAILING_SIZE);
 				strcpy(trailing,buffer_tmp + 1);
 				trailing[strlen(trailing) - 1] = 0;
-				delete [] buffer_tmp;
+				if(buffer_tmp != NULL)
+				{
+					delete [] buffer_tmp;
+					buffer_tmp = NULL;
+				}
 			}
 		}
 	}
@@ -72,6 +76,7 @@ IRCMessage::IRCMessage(const char* message)
 	}
 	
 	delete [] full_message;
+	full_message = NULL;
 }
 
 void IRCMessage::getSender(char* s)

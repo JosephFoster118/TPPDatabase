@@ -29,12 +29,40 @@ Pokemon::Pokemon(const char* d,MYSQL *db)
 	MYSQL_RES *result = mysql_store_result(db);
 	int num_fields = mysql_num_fields(result);
 	row = mysql_fetch_row(result);
+	//printf("Number of fields %d  %d\n",num_fields,row);
+	if(row != NULL)
+	{
 	 
 		for(int i = 0; i < num_fields; i++) 
 		{ 
-			printf("\"%s\" ", row[i] ? row[i] : "NULL"); 
+			//printf("\"%s\" ", row[i] ? row[i] : "NULL");
+			switch(i)
+			{
+				case 0:
+					{
+						strcpy(move_a,row[i] ? row[i] : "NULL");
+					}
+				case 1:
+					{
+						strcpy(move_b,row[i] ? row[i] : "NULL");
+					}
+				case 2:
+					{
+						strcpy(move_c,row[i] ? row[i] : "NULL");
+					}
+				case 3:
+					{
+						strcpy(move_d,row[i] ? row[i] : "NULL");
+					}
+			}
 		} 
-			printf("\n"); 
+			//printf("\n"); 
+	}
+	else
+	{
+		fprintf(stderr,"Error, %s not found\n",species);
+		fflush(stderr);
+	}
 	
 	mysql_free_result(result);
 	
@@ -51,6 +79,15 @@ Pokemon::Pokemon(int i, const char* spec, const char* ab, const char* it,
 	strcpy(move_b,m_b);
 	strcpy(move_c,m_c);
 	strcpy(move_d,m_d);
+}
+
+Pokemon::Pokemon(Pokemon* tbc)
+{
+	id = tbc->getId();
+	tbc->getMoveA(move_a);
+	tbc->getMoveB(move_b);
+	tbc->getMoveC(move_c);
+	tbc->getMoveD(move_d);
 }
 
 

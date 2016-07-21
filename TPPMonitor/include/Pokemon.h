@@ -14,6 +14,7 @@ class Pokemon
 	Pokemon(const char* data,MYSQL *db);
 	Pokemon(int i, const char* spec, const char* ab, const char* it,
 		const char* m_a, const char* m_b, const char* m_c, const char* m_d);
+	Pokemon(Pokemon* tbc);//Clone Constructor
 	int getId();
 	void getSpecies(char* str);
 	void getAbility(char* str);
