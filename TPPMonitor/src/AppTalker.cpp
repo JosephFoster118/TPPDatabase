@@ -11,5 +11,6 @@
 AppTalker::AppTalker()
 {
 	//TODO: Initialize Variables
+	server_port = DEFUALT_SERVER_PORT;
 }
 
