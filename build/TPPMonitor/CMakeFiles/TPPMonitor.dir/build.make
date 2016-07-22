@@ -95,9 +95,32 @@ TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o.provides: TPPMonitor/C
 
 TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o.provides.build: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o
 
+TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o: TPPMonitor/CMakeFiles/TPPMonitor.dir/flags.make
+TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o: ../TPPMonitor/src/AppTalker.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o"
+	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o -c /home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/AppTalker.cpp
+
+TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.i"
+	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/AppTalker.cpp > CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.i
+
+TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.s"
+	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/AppTalker.cpp -o CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.s
+
+TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.requires:
+.PHONY : TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.requires
+
+TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.provides: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.requires
+	$(MAKE) -f TPPMonitor/CMakeFiles/TPPMonitor.dir/build.make TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.provides.build
+.PHONY : TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.provides
+
+TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.provides.build: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o
+
 TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o: TPPMonitor/CMakeFiles/TPPMonitor.dir/flags.make
 TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o: ../TPPMonitor/src/Pokemon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o"
 	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o -c /home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/Pokemon.cpp
 
@@ -120,7 +143,7 @@ TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o.provides.build: TPPMonito
 
 TPPMonitor/CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o: TPPMonitor/CMakeFiles/TPPMonitor.dir/flags.make
 TPPMonitor/CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o: ../TPPMonitor/src/TPPMonitor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object TPPMonitor/CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o"
 	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o -c /home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/TPPMonitor.cpp
 
@@ -143,7 +166,7 @@ TPPMonitor/CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o.provides.build: TPPMon
 
 TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o: TPPMonitor/CMakeFiles/TPPMonitor.dir/flags.make
 TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o: ../TPPMonitor/src/IRCClient.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/BBB/software/TwitchPlaysPokemonMonitor/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o"
 	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o -c /home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/IRCClient.cpp
 
@@ -168,6 +191,7 @@ TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o.provides.build: TPPMoni
 TPPMonitor_OBJECTS = \
 "CMakeFiles/TPPMonitor.dir/src/Monitor.cpp.o" \
 "CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o" \
+"CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o" \
 "CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o" \
 "CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o" \
 "CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o"
@@ -177,6 +201,7 @@ TPPMonitor_EXTERNAL_OBJECTS =
 
 ../bin/TPPMonitor: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Monitor.cpp.o
 ../bin/TPPMonitor: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o
+../bin/TPPMonitor: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o
 ../bin/TPPMonitor: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o
 ../bin/TPPMonitor: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o
 ../bin/TPPMonitor: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o
@@ -193,6 +218,7 @@ TPPMonitor/CMakeFiles/TPPMonitor.dir/build: ../bin/TPPMonitor
 
 TPPMonitor/CMakeFiles/TPPMonitor.dir/requires: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Monitor.cpp.o.requires
 TPPMonitor/CMakeFiles/TPPMonitor.dir/requires: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o.requires
+TPPMonitor/CMakeFiles/TPPMonitor.dir/requires: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o.requires
 TPPMonitor/CMakeFiles/TPPMonitor.dir/requires: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o.requires
 TPPMonitor/CMakeFiles/TPPMonitor.dir/requires: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o.requires
 TPPMonitor/CMakeFiles/TPPMonitor.dir/requires: TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o.requires

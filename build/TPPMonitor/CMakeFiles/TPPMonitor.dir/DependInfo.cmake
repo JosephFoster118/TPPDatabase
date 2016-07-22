@@ -4,6 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/AppTalker.cpp" "/home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o"
   "/home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/IRCClient.cpp" "/home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o"
   "/home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/IRCMessage.cpp" "/home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor/CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o"
   "/home/BBB/software/TwitchPlaysPokemonMonitor/TPPMonitor/src/Monitor.cpp" "/home/BBB/software/TwitchPlaysPokemonMonitor/build/TPPMonitor/CMakeFiles/TPPMonitor.dir/src/Monitor.cpp.o"

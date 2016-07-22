@@ -112,6 +112,30 @@ TPPMonitor/fast:
 	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build && $(MAKE) -f TPPMonitor/CMakeFiles/TPPMonitor.dir/build.make TPPMonitor/CMakeFiles/TPPMonitor.dir/build
 .PHONY : TPPMonitor/fast
 
+src/AppTalker.o: src/AppTalker.cpp.o
+.PHONY : src/AppTalker.o
+
+# target to build an object file
+src/AppTalker.cpp.o:
+	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build && $(MAKE) -f TPPMonitor/CMakeFiles/TPPMonitor.dir/build.make TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o
+.PHONY : src/AppTalker.cpp.o
+
+src/AppTalker.i: src/AppTalker.cpp.i
+.PHONY : src/AppTalker.i
+
+# target to preprocess a source file
+src/AppTalker.cpp.i:
+	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build && $(MAKE) -f TPPMonitor/CMakeFiles/TPPMonitor.dir/build.make TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.i
+.PHONY : src/AppTalker.cpp.i
+
+src/AppTalker.s: src/AppTalker.cpp.s
+.PHONY : src/AppTalker.s
+
+# target to generate assembly for a file
+src/AppTalker.cpp.s:
+	cd /home/BBB/software/TwitchPlaysPokemonMonitor/build && $(MAKE) -f TPPMonitor/CMakeFiles/TPPMonitor.dir/build.make TPPMonitor/CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.s
+.PHONY : src/AppTalker.cpp.s
+
 src/IRCClient.o: src/IRCClient.cpp.o
 .PHONY : src/IRCClient.o
 
@@ -241,6 +265,9 @@ help:
 	@echo "... TPPMonitor"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... src/AppTalker.o"
+	@echo "... src/AppTalker.i"
+	@echo "... src/AppTalker.s"
 	@echo "... src/IRCClient.o"
 	@echo "... src/IRCClient.i"
 	@echo "... src/IRCClient.s"

@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/TPPMonitor.dir/src/Monitor.cpp.o"
   "CMakeFiles/TPPMonitor.dir/src/IRCMessage.cpp.o"
+  "CMakeFiles/TPPMonitor.dir/src/AppTalker.cpp.o"
   "CMakeFiles/TPPMonitor.dir/src/Pokemon.cpp.o"
   "CMakeFiles/TPPMonitor.dir/src/TPPMonitor.cpp.o"
   "CMakeFiles/TPPMonitor.dir/src/IRCClient.cpp.o"
