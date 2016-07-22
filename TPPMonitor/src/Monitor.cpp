@@ -43,7 +43,7 @@ void Monitor::callbackMessage(const char* channel, IRCMessage* message)
 	printf("%-28s:%-120s [%8d]\n",sender,trailing,message_counter);
 	if(strcmp(sender,"tpp") == 0)
 	{	
-		
+		//printf("%-28s:%-120s [%8d]\n",sender,trailing,message_counter);
 		//printf("%-20s: %s\n",channel,trailing);
 		if(strstr(trailing,"fainted!") != NULL)
 		{
