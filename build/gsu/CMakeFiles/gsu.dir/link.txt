@@ -1,2 +1,0 @@
-/usr/bin/ar cr ../../lib/libgsu.a  CMakeFiles/gsu.dir/src/Vector2D.cpp.o CMakeFiles/gsu.dir/src/iniparser.cpp.o CMakeFiles/gsu.dir/src/dictionary.cpp.o CMakeFiles/gsu.dir/src/Callback.cpp.o
-/usr/bin/ranlib ../../lib/libgsu.a

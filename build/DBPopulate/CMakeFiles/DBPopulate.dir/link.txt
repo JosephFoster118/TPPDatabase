@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/DBPopulate.dir/src/main.cpp.o CMakeFiles/DBPopulate.dir/src/Pokemon.cpp.o  -o ../../bin/DBPopulate -rdynamic -L/home/BBB/software/TwitchPlaysPokemonMonitor/build/../lib ../../lib/libgsi.a ../../lib/libgsu.a -lmysqlclient -lpthread -Wl,-rpath,/home/BBB/software/TwitchPlaysPokemonMonitor/build/../lib 
