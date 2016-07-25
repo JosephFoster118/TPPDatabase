@@ -10,6 +10,7 @@
 #include "gsi/Thread.h"
 #include "IRCClient.h"
 #include "Monitor.h"
+#include "AppTalker.h"
 
 #define clear() printf("\033[H\033[J")
 #define gotoxy(x,y) printf("\033[%d;%dH", (x), (y))
@@ -38,6 +39,7 @@ int main()
 	char team_stats_table[64];
 	char twitch_username[64];
 	char twitch_password[64];
+	uint16_t app_talker_port = 0;
 	
 	memset(login_user,0,64);
 	memset(login_password,0,64);
@@ -128,6 +130,16 @@ int main()
 	{
 		strcpy(twitch_password,"error");
 	}
+	////////////////////////////////////////App Talker Port
+	data = iniparser_getstring(settings_file,"APP_TALKER:port",NULL);
+	if(data != NULL)
+	{
+		app_talker_port = atoi(data);
+	}
+	else
+	{
+		app_talker_port = 0;
+	}
 	
 	printf("Username: %s\n",login_user);
 	//printf("Password: %s\n",login_password);
@@ -137,6 +149,7 @@ int main()
 	printf("Team Stats Table: %s\n",team_stats_table);
 	printf("Twitch Username: %s\n",twitch_username);
 	printf("Twitch Password: %s\n",twitch_password);
+	printf("AppTalker port: %d\n",app_talker_port);
 	iniparser_freedict(settings_file);
 	
 	IRCClient* tpp_listener;
@@ -152,6 +165,14 @@ int main()
 	Monitor* monitor;
 	monitor = new Monitor(tpp_listener,twitchplayspokemon_listener);
 	monitor->initDatabase(team_stats_database,login_password);
+	
+	//TODO: Change to dynamic constructor
+	AppTalker* app_talker = new AppTalker();
+	if(app_talker->hasFailed())
+	{
+		printf("AppTalker failed to bind port!\n");
+		return -8;
+	}
 	
 	//wait for 
 	while(true)

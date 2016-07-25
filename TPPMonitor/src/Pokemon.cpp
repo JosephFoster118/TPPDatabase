@@ -65,6 +65,7 @@ Pokemon::Pokemon(const char* d,MYSQL *db)
 	}
 	
 	mysql_free_result(result);
+	generateMoveString();
 	
 }
 
@@ -79,6 +80,7 @@ Pokemon::Pokemon(int i, const char* spec, const char* ab, const char* it,
 	strcpy(move_b,m_b);
 	strcpy(move_c,m_c);
 	strcpy(move_d,m_d);
+	generateMoveString();
 }
 
 Pokemon::Pokemon(Pokemon* tbc)
@@ -88,6 +90,12 @@ Pokemon::Pokemon(Pokemon* tbc)
 	tbc->getMoveB(move_b);
 	tbc->getMoveC(move_c);
 	tbc->getMoveD(move_d);
+	generateMoveString();
+}
+
+void Pokemon::generateMoveString()
+{
+	sprintf(move_output_string,"%s|%s|%s|%s|",move_a,move_b,move_c,move_d);
 }
 
 

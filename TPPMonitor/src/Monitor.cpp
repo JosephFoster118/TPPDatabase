@@ -40,7 +40,7 @@ void Monitor::callbackMessage(const char* channel, IRCMessage* message)
 	message->getTrailing(trailing);
 	int result = 0;
 	message_counter++;
-	printf("%-28s:%-120s [%8d]\n",sender,trailing,message_counter);
+	printf("[%-8d][%-28s]:%s\n",message_counter,sender,trailing);
 	if(strcmp(sender,"tpp") == 0)
 	{	
 		//printf("%-28s:%-120s [%8d]\n",sender,trailing,message_counter);

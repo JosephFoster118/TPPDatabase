@@ -10,13 +10,23 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#include <string>
 
-class AppTalker
+
+#include "gsi/Thread.h"
+#include "gsi/UdpSocket.h"
+
+class AppTalker: public gsi::Thread
 {
 private:
 	uint16_t server_port;
+	void run();
+	gsi::UdpSocket* socket;
+	bool failed;
 public:
+	const static uint16_t BUFFER_SIZE = 2048;
 	const static uint16_t DEFUALT_SERVER_PORT = 25738;
 	AppTalker(); //Defualt Constructor
+	bool hasFailed();
 };
 

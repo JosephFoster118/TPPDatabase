@@ -7,6 +7,7 @@
 #include <mysql.h>
 
 #define P_BUFFER_SIZE 32
+#define P_M_BUFFER_SIZE 2048
 
 class Pokemon
 {
@@ -22,6 +23,8 @@ class Pokemon
 	void getMoveB(char* str);
 	void getMoveC(char* str);
 	void getMoveD(char* str);
+	
+	
 	private:
 	int id;
 	char species[P_BUFFER_SIZE];
@@ -31,6 +34,8 @@ class Pokemon
 	char move_b[P_BUFFER_SIZE];
 	char move_c[P_BUFFER_SIZE];
 	char move_d[P_BUFFER_SIZE];
+	char move_output_string[P_M_BUFFER_SIZE];
+	void generateMoveString();
 	
 	
 	
