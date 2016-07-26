@@ -167,7 +167,7 @@ int main()
 	monitor->initDatabase(team_stats_database,login_password);
 	
 	//TODO: Change to dynamic constructor
-	AppTalker* app_talker = new AppTalker();
+	AppTalker* app_talker = new AppTalker(monitor);
 	if(app_talker->hasFailed())
 	{
 		printf("AppTalker failed to bind port!\n");

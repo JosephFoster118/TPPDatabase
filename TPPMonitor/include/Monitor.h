@@ -35,5 +35,7 @@ public:
 	void extractPokemon(const char* l);
 	Pokemon* getRedPokemon(); //Clones the red pokemon, must delete
 	Pokemon* getBluePokemon(); //Clones the blue pokemon, must delete
+	void getRedMoves(char* buf);
+	void getBlueMoves(char* buf);
 };
 

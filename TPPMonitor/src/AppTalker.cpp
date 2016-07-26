@@ -8,10 +8,11 @@
 
 #include "AppTalker.h"
 
-AppTalker::AppTalker(): Thread("AppTalker")
+AppTalker::AppTalker(Monitor* m): Thread("AppTalker")
 {
 	//TODO: Initialize Variables
 	server_port = DEFUALT_SERVER_PORT;
+	monitor = m;
 	failed = false;
 	try
 	{
@@ -49,9 +50,17 @@ void AppTalker::run()
 		printf("[%-18s][%-8d]:\"%s\"\n",recv_ip.data(),recv_port,recv_buffer);
 		if(strcmp(recv_buffer,"m_red") == 0)
 		{
-			printf("Received moves message\n");
 			memset(send_buffer,0,BUFFER_SIZE);
+			monitor->getRedMoves(send_buffer);
+			printf("%s\n",send_buffer);
 		}
+		if(strcmp(recv_buffer,"m_blue") == 0)
+		{
+			memset(send_buffer,0,BUFFER_SIZE);
+			monitor->getBlueMoves(send_buffer);
+			printf("%s\n",send_buffer);
+		}
+		socket->sendTo(send_buffer,strlen(send_buffer) + 1,recv_ip,recv_port);
 	}
 }
 

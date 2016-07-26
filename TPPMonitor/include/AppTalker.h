@@ -15,6 +15,7 @@
 
 #include "gsi/Thread.h"
 #include "gsi/UdpSocket.h"
+#include "Monitor.h"
 
 class AppTalker: public gsi::Thread
 {
@@ -23,10 +24,11 @@ private:
 	void run();
 	gsi::UdpSocket* socket;
 	bool failed;
+	Monitor* monitor;
 public:
 	const static uint16_t BUFFER_SIZE = 2048;
 	const static uint16_t DEFUALT_SERVER_PORT = 25738;
-	AppTalker(); //Defualt Constructor
+	AppTalker(Monitor* m); //Defualt Constructor
 	bool hasFailed();
 };
 

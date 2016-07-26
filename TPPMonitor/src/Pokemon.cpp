@@ -98,7 +98,10 @@ void Pokemon::generateMoveString()
 	sprintf(move_output_string,"%s|%s|%s|%s|",move_a,move_b,move_c,move_d);
 }
 
-
+void Pokemon::getMoveString(char* str)
+{
+	strcpy(str,move_output_string);
+}
 
 int Pokemon::getId()
 {

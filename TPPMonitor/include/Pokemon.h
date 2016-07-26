@@ -23,6 +23,7 @@ class Pokemon
 	void getMoveB(char* str);
 	void getMoveC(char* str);
 	void getMoveD(char* str);
+	void getMoveString(char* str);
 	
 	
 	private:

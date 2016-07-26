@@ -374,6 +374,34 @@ Pokemon* Monitor::getBluePokemon()
 	return NULL;
 }
 
+void Monitor::getRedMoves(char* buf)
+{
+	mutex->lock();
+	if(current_red >= 0)
+	{
+		pokemon[current_red]->getMoveString(buf);
+	}
+	else
+	{
+		strcpy(buf,"A|B|C|D|");
+	}
+	mutex->unlock();
+}
+
+void Monitor::getBlueMoves(char* buf)
+{
+	mutex->lock();
+	if(current_blue >= 0)
+	{
+		pokemon[current_blue]->getMoveString(buf);
+	}
+	else
+	{
+		strcpy(buf,"A|B|C|D|");
+	}
+	mutex->unlock();
+}
+
 
 
 
