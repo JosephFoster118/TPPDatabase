@@ -47,18 +47,18 @@ void AppTalker::run()
 		recv_port = 0;
 		memset(recv_buffer,0,BUFFER_SIZE);
 		socket->recvFrom(recv_buffer,BUFFER_SIZE,recv_ip,recv_port);
-		printf("[%-18s][%-8d]:\"%s\"\n",recv_ip.data(),recv_port,recv_buffer);
+		//printf("[%-18s][%-8d]:\"%s\"\n",recv_ip.data(),recv_port,recv_buffer);
 		if(strcmp(recv_buffer,"m_red") == 0)
 		{
 			memset(send_buffer,0,BUFFER_SIZE);
 			monitor->getRedMoves(send_buffer);
-			printf("%s\n",send_buffer);
+			//printf("%s\n",send_buffer);
 		}
 		if(strcmp(recv_buffer,"m_blue") == 0)
 		{
 			memset(send_buffer,0,BUFFER_SIZE);
 			monitor->getBlueMoves(send_buffer);
-			printf("%s\n",send_buffer);
+			//printf("%s\n",send_buffer);
 		}
 		socket->sendTo(send_buffer,strlen(send_buffer) + 1,recv_ip,recv_port);
 	}
